@@ -1,15 +1,8 @@
-FROM node:10-alpine
-
-WORKDIR /home/node/app
-
-COPY package*.json ./
-
-USER node
-
+FROM node:14-alpine
+RUN mkdir /my_app
+COPY package.json /my_app
+WORKDIR /my_app
 RUN npm install
-
-COPY --chown=node:node . .
-
-EXPOSE 8080
-
-CMD [ "node", "app.js" ]
+COPY . .
+EXPOSE 3003
+CMD ["npm" , "start"]
