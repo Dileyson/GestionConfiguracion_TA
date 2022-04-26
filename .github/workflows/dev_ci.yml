@@ -16,7 +16,6 @@ jobs:
         npm install express
         npm install pg
         
-jobs:
   Test:  
     runs-on: ubuntu-latest
     steps:
