@@ -1,0 +1,20 @@
+name: OurPipeline
+
+on:[push]
+
+jobs:
+  build:
+  
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+      name: crear check del proyecto
+    - name: Run a one-line script
+      run: echo Esta iniciando !!!
+    - name: Run a multi-line script
+      run:
+          echo creando archivo log
+          time
+          touch log_webservicev1.txt
+          ls -la
