@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    web:
+      container_name: gym
+      restart: always
+      build: .
+      ports:
+          - "4001:3000"
+      links:
+          - postgres
+    postgres:
+      container_name: postgres
+      image: postgres
+      ports:
+          - "2700:2700"
