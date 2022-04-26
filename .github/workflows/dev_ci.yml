@@ -15,10 +15,11 @@ jobs:
         npm install
         npm install express
         npm install pg
-
+        
 jobs:
-  test:  
+  Test:  
     runs-on: ubuntu-latest
     steps:
     - name: test
-      run: npm test
+      run: |
+        npm test
