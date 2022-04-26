@@ -15,7 +15,4 @@ jobs:
         npm install
         npm install express
         npm install pg
-        npm install eslint
-    - name: Run ESLint static code analysis
-      run: |
-        eslint . --ext .js
+        npm test
