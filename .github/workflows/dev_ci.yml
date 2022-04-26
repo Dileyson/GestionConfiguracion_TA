@@ -2,19 +2,19 @@ name: CI
 on: push
 jobs:
   continous_integration:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Code checkout
-    uses: actions/checkout@v2
-  - name: Set up Node.js
-    uses: actions/setup-node@v3
-    with:
-      node-version: '14.x'
-  - name: Install dependencies
-    run: |
-      npm install
-      npm install eslint
-      npm install -r requirements.txt
-  - name: Run ESLint static code analysis
-    run: |
-      eslint . --ext .js
+    runs-on: ubuntu-latest
+    steps:
+    - name: Code checkout
+      uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14.x'
+    - name: Install dependencies
+      run: |
+        npm install
+        npm install eslint
+        npm install -r requirements.txt
+    - name: Run ESLint static code analysis
+      run: |
+        eslint . --ext .js
