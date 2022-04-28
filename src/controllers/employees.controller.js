@@ -17,7 +17,9 @@ const pool = new Pool({
 const getEmployees = async (req, res) => {
   // const response = await pool.query('SELECT * FROM employee')
   // res.status(200).json(response.rows);
-  const response = await console.log('Lista todos los empleados');
+  const response = await "aqui van todos los empleados"
+  console.log('Lista todos los empleados');
+  res.status(200).json(response)
 };
 
 const createEmployee = async (req, res) => {
@@ -34,7 +36,9 @@ const createEmployee = async (req, res) => {
   // } catch (error) {
   //   console.log(error);
   // }
-  const response = await console.log('Crea empleado');
+  const response = await "Aquì se crea un empleado"
+  console.log('Crea empleado');
+  res.status(200).json(response)
 };
 
 const getEmployeeById = async (req, res) => {
@@ -45,7 +49,9 @@ const getEmployeeById = async (req, res) => {
   // } catch (error) {
   //   console.error(error);
   // }
-  const response = await console.log('Lista un empleado');
+  const response = await "Aqui se obtiene un empleado"
+  console.log('Lista un empleado');
+  res.status(200).json(response)
 }
 
 const updateEmployeeById = async (req, res) => {
@@ -69,7 +75,9 @@ const updateEmployeeById = async (req, res) => {
   // } catch (error) {
   //   console.error(error);
   // }
-  const response = await console.log('Actualiza empleado');
+  const response = await "Aqui se actualiza un empleado"
+  console.log('Actualiza empleado');
+  res.status(200).json(response)
 }
 
 const deleteEmployeeById = async (req, res) => {
@@ -83,7 +91,9 @@ const deleteEmployeeById = async (req, res) => {
   //     message: "Ocurrio un error"
   //   });
   // }
-  const response = await console.log('Elimina un empleado');
+  const response = await "Aqui se elimina un empleado"
+  console.log('Elimina un empleado');
+  res.status(200).json(response)
 }
 
 
