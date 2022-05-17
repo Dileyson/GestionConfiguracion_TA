@@ -10,3 +10,6 @@ module.exports = {
     dbDatabase: process.env.DB_DATABASE || "",
     dbPort: process.env.DB_PORT || "",
 };
+
+//OM+u9M76Eyep+Z6nXJCwHiCGY580Mhm7GNnsyWEf
+//AKIARDZOGL4IWYE657QM
