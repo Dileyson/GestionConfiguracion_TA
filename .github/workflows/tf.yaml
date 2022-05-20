@@ -36,4 +36,8 @@ jobs:
           cd terraform/
           terraform plan -input=false -no-color
       - name: Terraform Apply
-        run: terraform apply -auto-approve -input=false
+        id: apply
+        continue-on-error: true
+        run: |
+          cd terraform/
+          terraform apply -input=false -no-color
