@@ -1,6 +1,10 @@
 name: Terraform Plan
 
-on: [ push ]
+on:
+  workflow_run:
+    workflows: [ "CD" ]
+    types: [ completed ]
+    branches: [ main, release2.0 ]
 
 jobs:
   lint:
