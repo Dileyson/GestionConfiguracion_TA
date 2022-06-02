@@ -44,4 +44,4 @@ jobs:
         continue-on-error: true
         run: |
           cd terraform/
-          terraform apply -input=false -no-color
+          terraform apply -auto-approve -input=false -no-color
